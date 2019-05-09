@@ -1,0 +1,47 @@
+﻿label{
+    width: 150px;
+}
+
+.btn-default {
+    color: teal;
+}
+
+.skill_name {
+    width:100px;
+}
+
+.skill_description {
+    width: 500px;
+    max-width: 500px;
+}
+
+#profilePictureImg, #profilePictureImgTable {
+    width: 100px;
+    height: 100px;  
+}
+
+#profilePictureImg {
+    display: none;
+}
+
+input {
+    color: teal
+}
+
+#skillTable, #tableUsers {
+    background-color: rgba(82, 187, 135, 0.2);
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/2217365/pexels-photo-2217365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    color: azure;    
+}
+
+
+

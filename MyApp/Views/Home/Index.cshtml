@@ -1,0 +1,64 @@
+﻿@section Scripts {
+    @Scripts.Render("~/Scripts/Script1.js")
+}
+<link href="~/Scripts/MyStyle.css" rel="stylesheet" type="text/css" />
+
+<div class="jumbotron" style="background:transparent !important" id="divInfo" >
+    <div class="row" id="divHeader"><h2>Registration form</h2></div> <br/>
+    <div class="row">
+        <div class="col-sm-9" id="divRegister">
+            <div class="form-group">
+                <label>Name: </label><input type="text" placeholder="Name" id="nameRegister" />
+            </div>
+            <div class="form-group">
+                <label>Last Name: </label><input type="text" placeholder="Last Name"id="lastNameRegister" />
+            </div>
+            <div class="form-group">
+                <label>Birthday: </label><input type="date" id="birthdayRegister" />
+            </div>
+            <div class="form-group">
+                <label>Email: </label><input type="email" placeholder="example@gmail.com" id="emailRegister" />
+            </div>
+            <div class="form-group">
+                <label>Password: </label><input type="password" placeholder="Password" id="passwordRegister" />
+            </div>
+            <div class="form-group">
+                <label>Confirm password</label><input type="password" placeholder="Type password again"id="password2Register" />
+            </div>
+            <div class="form-group">
+                <label>Profile picture: </label><input type="file" id="profilePictureRegister" />
+                <img src ="" id="profilePictureImg"   />
+            </div>
+            <div class="form-group" id="divSkills">
+                <label>Skills: </label>
+                <table contenteditable="true" id="skillTable" class="table">
+                    <tr><td class="skill_name">Name</td><td class="skill_description">Description</td></tr>
+                    <tr><td><input class="skill_name skill" type="text" /></td><td><input class="skill_description skill" type="text" /></td></tr>
+                </table>
+                <input type="button" id="btnAddRow" value="Add new row" class="btn-default"/>
+            </div><br />
+
+            <div class="form-group">
+                <input type="submit" id="btnRegister" value="Register" class="btn-default btn-lg" />
+            </div>
+            <div class="form-group" id="regInfo"></div>
+        </div>
+        <div class="col-sm-3" id="divLogin">
+            <h2>Login</h2><br/>
+            <div class="form-group">
+                <label>Email: </label><input type="email" placeholder="example@gmail.com" id="emailLogin" />
+            </div>
+            <div class="form-group">
+                <label>Password: </label><input type="password"  placeholder="Password" id="passwordLogin" />
+            </div>
+            <div class="form-group">
+                <input type="submit" id="btnLogin" value="Log In" class="btn-default btn-lg" />
+            </div>
+        </div>
+        <div class="col-sm-3" id="loginInfo"></div>
+        <div class="col-sm-3" id="divLogOut">
+            <input type="button" id="btnLogOut" value="Log Out" class="btn-default btn-lg" />
+        </div>
+    </div>
+    <div class="row" id="tableUsers"></div>
+</div>
